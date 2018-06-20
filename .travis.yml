@@ -7,12 +7,6 @@ dotnet: 2.0.0
 install:
 - dotnet restore
 dist: trusty  
-services:
-  - postgresql
-before_script:
-  - psql -c "CREATE DATABASE migrations;" -U postgres
-  - psql -c "CREATE USER migrator WITH PASSWORD '123';" -U postgres  
-  - psql -c 'CREATE SCHEMA "Moo" AUTHORIZATION migrator;' -U postgres -d migrations  
-  - dotnet restore
-script:  
-  - dotnet test ./ClassOperTests -c Release -f netcoreapp2.0
+script:
+ - dotnet build
+ - dotnet test MTAServiceStatus.Tests/MTAServiceStatus.Tests.csproj
