@@ -2,8 +2,7 @@ language: csharp
 solution: "./TP_lb3_Mass.sln"
 os: windows
 install:
-  - nuget restore TP_lb3_Mass.sln
-  - nuget install xunit.runners -Version 3.8.0 -OutputDirectory testrunner
+- travis_retry nuget restore -source "https://www.nuget.org/api/v2" ./TP_lb3_Mass.sln
 script:
 - xbuild ./TP_lb3_Mass.sln
-- mono ./testrunner/xunit.runners.3.8.0/tools/xunit.console.clr4.exe ./ClassOperTests/bin/Debug/ClassOperTests.dll
+- mono ./ClassOperTests/packages/xunit.runner.console*/tools/xunit.console.exe ./ClassOperTests/bin/Debug/ClassOperTests.dll
