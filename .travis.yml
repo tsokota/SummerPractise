@@ -1,12 +1,8 @@
-language: csharp  
-sudo: required 
-solution: "./TP_lb3_Mass.sln"
-mono: none
-dotnet: 2.0.0
-
+language: csharp
+solution: sTP_lb3_Mass.sln
 install:
-- dotnet restore
-dist: trusty  
+  - nuget restore TP_lb3_Mass.sln
+  - nuget install NUnit.Runners -Version 3.10.1 -OutputDirectory testrunner
 script:
- - dotnet build ./TP_lb3_Mass.sln
- - dotnet test ClassOperTests/ClassOperTests.csproj
+  - xbuild /p:Configuration=Release TP_lb3_Mass.sln
+  - mono ./testrunner/NUnit.Runners.3.10.1/tools/nunit-console.exe ./ClassOperTests1/bin/Release/ClassOperTests1.dll
