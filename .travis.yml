@@ -1,8 +1,9 @@
 language: csharp
 solution: "./TP_lb3_Mass.sln"
 os: windows
+mono: 3.12.0
 install:
 - travis_retry nuget restore -source "https://www.nuget.org/api/v2" ./TP_lb3_Mass.sln
 script:
 - xbuild ./TP_lb3_Mass.sln
-- mono ./UnitTestProject1/bin/Debug/UnitTestProject1.dll
+- mono ./testrunner/xunit.runners.1.9.2/tools/xunit.console.clr4.exe ./UnitTestProject1/bin/Debug/UnitTestProject1.dll
