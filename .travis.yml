@@ -16,9 +16,6 @@ matrix:
   allow_failures:
     - env: SOME_ENV_HERE=some_opt
 
-before_install: # clone travis-hx repo
-  - travis_retry git clone --depth=50 --branch=master git://github.com/waneck/travis-hx.git ~/travis-hx
-
 install: # setup the target
   - ~/travis-hx/setup.sh
 
@@ -27,4 +24,4 @@ script:
   # build the target. This will call haxe with the HXFLAGS and HXFLAGS_EXTRA environment variables
   - HXFLAGS="-cp src -main test.TestAll" ~/travis-hx/build.sh
   # run the tests
-  - ~/travis-hx/runtests.sh $FILENAME # this will set the $FILENAME defined on the environment variable to run the tests
+  - ~/travis-hx/runtests.sh $ClassLibrary1Tests # this will set the $FILENAME defined on the environment variable to run the tests
