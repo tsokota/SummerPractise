@@ -8,8 +8,8 @@ env:
         - DOTNET_CLI_TELEMETRY_OPTOUT: 1
 
 script:
-    - dotnet build CIDemo.sln -c Release
-    - dotnet test -c Release --no-build test/test.csproj /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
+    - dotnet build TP_lb3_Mass.sln -c 
+    - dotnet test -c Release --no-build UnitTestProject1/UnitTestProject1.csproj /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
 
 after_script:
         - bash <(curl -s https://codecov.io/bash)
