@@ -5,4 +5,4 @@ install:
 - travis_retry nuget restore -source "https://www.nuget.org/api/v2" ./TP_lb3_Mass.sln
 script:
 - xbuild ./TP_lb3_Mass.sln
-- mono ./TP_lb3_Mass/packages/xunit.runner.console*/tools/xunit.console.exe ./UnitTestProject1/bin/Debug/UnitTestProject1.dll
+- mono ./UnitTestProject1/bin/Debug/UnitTestProject1.dll
