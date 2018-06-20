@@ -1,8 +1,15 @@
-language: csharp
+language: csharp  
+sudo: required 
 solution: "./TP_lb3_Mass.sln"
-
-install:
-- travis_retry nuget restore -source "https://www.nuget.org/api/v2" ./TP_lb3_Mass.sln
-script:
-- xbuild ./TP_lb3_Mass.sln
-- mono ./ClassOperTests/packages/xunit.runner.console*/tools/xunit.console.exe ./ClassOperTests/bin/Debug/ClassOperTests.dll
+mono: none
+dotnet: 2.0.0-preview2-006497
+dist: trusty  
+services:
+  - postgresql
+before_script:
+  - psql -c "CREATE DATABASE migrations;" -U postgres
+  - psql -c "CREATE USER migrator WITH PASSWORD '123';" -U postgres  
+  - psql -c 'CREATE SCHEMA "Moo" AUTHORIZATION migrator;' -U postgres -d migrations  
+  - dotnet restore
+script:  
+  - dotnet test ./ClassOperTests -c Release -f netcoreapp2.0
