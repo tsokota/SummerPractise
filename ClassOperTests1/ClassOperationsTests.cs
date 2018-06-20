@@ -1,4 +1,4 @@
-﻿using Xunit;
+﻿using NUnit.Framework;
 using ClassOper;
 using System;
 using System.Collections.Generic;
@@ -8,13 +8,12 @@ using System.Threading.Tasks;
 
 namespace ClassOper.Tests
 {
+    [TestFixture()]
     public class ClassOperationsTests
     {
-    
-
         ClassOperations l = new ClassOperations();
 
-        [Fact()]
+        [Test()]
         public void TestMethod11()
         {  // оперция 1
             l.Mass = new int[] { 12, 6, -6, 15, 25, 6, -6, 23, 28, 16 };
@@ -23,7 +22,7 @@ namespace ClassOper.Tests
             Assert.True(l.Summ2 == 66);
         }
 
-        [Fact()]
+        [Test()]
         public void TestMethod12()
         {  // оперция 1
             l.Mass = new int[] { 0, 2, 0, 4, 0, 2, 0, 4, 0, 2 };
@@ -32,7 +31,7 @@ namespace ClassOper.Tests
             Assert.True(l.Summ2 == 8);
         }
 
-        [Fact()]
+        [Test()]
         public void TestMethod21()
         {  // оперция 2
             l.Mass = new int[] { 4, -4, 5, -5, 6, -6, 7, -7, 8, -8 };
@@ -44,7 +43,7 @@ namespace ClassOper.Tests
 
 
 
-        [Fact()]
+        [Test()]
         public void TestMethod31()
         {  // оперция 3
             l.Mass = new int[] { 12, 6, -6, 15, 25, 6, -6, 23, 28, 16 };
@@ -53,7 +52,7 @@ namespace ClassOper.Tests
             Assert.True(l.Num == 5);
         }
 
-        [Fact()]
+        [Test()]
         public void TestMethod32()
         {  // оперция 3
             l.Mass = new int[] { 12, 6, -6, 15, 25, 6, -6, 23, 28, 16 };
@@ -62,7 +61,7 @@ namespace ClassOper.Tests
             Assert.True(l.Num == 0);
         }
 
-        [Fact()]
+        [Test()]
         public void TestMethod41()
         {  // оперция 4
             l.Mass = new int[] { 12, 6, -6, 15, 25, 6, -6, 23, 28, 16 };
@@ -73,7 +72,7 @@ namespace ClassOper.Tests
             Assert.True(Tmp == "143,43");
         }
 
-        [Fact()]
+        [Test()]
         public void TestMethod42()
         { // оперция 4
             l.Mass = new int[] { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };

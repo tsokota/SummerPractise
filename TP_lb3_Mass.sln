@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TP_lb3_Mass", "TP_lb3_Mass\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassOper", "ClassOper\ClassOper.csproj", "{FD63F618-C7A1-41EC-8BC5-31BC4E1670E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassOperTests", "ClassOperTests\ClassOperTests.csproj", "{4BF99681-30E8-4FE3-B90E-28D55185AC3B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassOperTests1", "ClassOperTests1\ClassOperTests1.csproj", "{7330C0AD-9B38-4C81-92CB-9CACA5FA4FA0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{FD63F618-C7A1-41EC-8BC5-31BC4E1670E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD63F618-C7A1-41EC-8BC5-31BC4E1670E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD63F618-C7A1-41EC-8BC5-31BC4E1670E5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4BF99681-30E8-4FE3-B90E-28D55185AC3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4BF99681-30E8-4FE3-B90E-28D55185AC3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4BF99681-30E8-4FE3-B90E-28D55185AC3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4BF99681-30E8-4FE3-B90E-28D55185AC3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7330C0AD-9B38-4C81-92CB-9CACA5FA4FA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7330C0AD-9B38-4C81-92CB-9CACA5FA4FA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7330C0AD-9B38-4C81-92CB-9CACA5FA4FA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7330C0AD-9B38-4C81-92CB-9CACA5FA4FA0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
