@@ -8,5 +8,5 @@ install:
 - dotnet restore
 dist: trusty  
 script:
- - dotnet build
- - dotnet test MTAServiceStatus.Tests/MTAServiceStatus.Tests.csproj
+ - dotnet build ./TP_lb3_Mass.sln
+ - dotnet test ClassOperTests/ClassOperTests.csproj
