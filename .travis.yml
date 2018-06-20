@@ -2,6 +2,10 @@ language: csharp
 sudo: required 
 solution: "./TP_lb3_Mass.sln"
 mono: none
+dotnet: 2.0.0
+
+install:
+- dotnet restore
 dist: trusty  
 services:
   - postgresql
