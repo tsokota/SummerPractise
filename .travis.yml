@@ -1,15 +1,7 @@
 language: csharp
-
-dotnet: 2.1.4
-sudo: false
-
-env:
-    global:
-        - DOTNET_CLI_TELEMETRY_OPTOUT: 1
-
+solution: "./TP_lb3_Mass.sln"
+install:
+- travis_retry nuget restore -source "https://www.nuget.org/api/v2" ./TP_lb3_Mass.sln
 script:
-    - dotnet build TP_lb3_Mass.sln -c 
-    - dotnet test -c Release --no-build UnitTestProject1/UnitTestProject1.csproj /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
-
-after_script:
-        - bash <(curl -s https://codecov.io/bash)
+- xbuild ./TP_lb3_Mass.sln
+- mono ./TP_lb3_Mass/packages/xunit.runner.console*/tools/xunit.console.exe ./UnitTestProject1/bin/Debug/UnitTestProject1.dll
