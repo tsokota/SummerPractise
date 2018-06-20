@@ -5,7 +5,6 @@ env:
 
   matrix:
     - TARGET=cs
-      # optional: FILENAME
 
 matrix:
   fast_finish: true
