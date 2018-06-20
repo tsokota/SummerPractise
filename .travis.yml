@@ -1,0 +1,30 @@
+language: csharp
+solution: Laba_TP_1_1.sln
+
+env:
+  # HAXE_VER:
+  #  - unset/empty or "latest": get latest from hxbuilds
+  #  - 3.1.3 or 3.1.2: get them from hxbuilds
+  #  - other: build from git
+  global:
+  matrix:
+    - TARGET=cs
+      # optional: FILENAME
+
+matrix:
+  fast_finish: true
+  allow_failures:
+    - env: SOME_ENV_HERE=some_opt
+
+before_install: # clone travis-hx repo
+  - travis_retry git clone --depth=50 --branch=master git://github.com/waneck/travis-hx.git ~/travis-hx
+
+install: # setup the target
+  - ~/travis-hx/setup.sh
+
+script:
+  - cd $TRAVIS_BUILD_DIR
+  # build the target. This will call haxe with the HXFLAGS and HXFLAGS_EXTRA environment variables
+  - HXFLAGS="-cp src -main test.TestAll" ~/travis-hx/build.sh
+  # run the tests
+  - ~/travis-hx/runtests.sh $FILENAME # this will set the $FILENAME defined on the environment variable to run the tests
