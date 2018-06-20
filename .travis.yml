@@ -1,10 +1,8 @@
 language: csharp
-mono: none
-dotnet: 2.0.0
-
+solution: "./TP_lb3_Mass.sln"
+os: windows
 install:
-- dotnet restore
-
+- travis_retry nuget restore -source "https://www.nuget.org/api/v2" ./TP_lb3_Mass.sln
 script:
- - dotnet build
- - dotnet test ClassOperTests/ClassOperTests.csproj
+- xbuild ./TP_lb3_Mass.sln
+- mono ./ClassOperTests/packages/xunit.runner.console*/tools/xunit.console.exe ./ClassOperTests/bin/Debug/ClassOperTests.dll
