@@ -1,6 +1,7 @@
 language: csharp
 solution: Laba_TP_1_1.sln
 sudo: required  
+dotnet: 2.0.0-preview2-006497
 mono: none
 dist: trusty  
 script:  
