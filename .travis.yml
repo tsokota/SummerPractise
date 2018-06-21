@@ -4,4 +4,4 @@ sudo: required
 mono: none
 dist: trusty  
 script:  
-  - dotnet test ./Laba_TP_1_1 -c Release -f netcoreapp2.0
+  - dotnet test ./Class1Tests.cs -c Release -f netcoreapp2.0
