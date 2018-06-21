@@ -1,5 +1,6 @@
 language: csharp
 solution: TP_lb3_Mass.sln
+os: windows
 install:
   - nuget restore TP_lb3_Mass.sln
   - nuget install NUnit.Runners -Version 3.7.0 -OutputDirectory testrunner
