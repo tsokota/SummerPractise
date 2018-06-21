@@ -61,17 +61,7 @@ namespace ClassOper.Tests
             Assert.True(l.Num == 0);
         }
 
-        [Test()]
-        public void TestMethod41()
-        {  // оперция 4
-            l.Mass = new int[] { 12, 6, -6, 15, 25, 6, -6, 23, 28, 16 };
-            l.Oper4();
-            string Tmp = $"{l.Sr:0.##}";
-            Assert.True(Tmp == "11,9");
-            Tmp = $"{l.D:0.##}";
-            Assert.True(Tmp == "143,43");
-        }
-
+      
         [Test()]
         public void TestMethod42()
         { // оперция 4
