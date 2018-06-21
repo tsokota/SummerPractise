@@ -7,6 +7,5 @@ dist: trusty
  - TARGET=cs
 script:  
  - cd $TRAVIS_BUILD_DIR
-  # build the target. This will call haxe with the HXFLAGS and HXFLAGS_EXTRA environment variables
 - HXFLAGS="-cp src -main test.TestAll" ~/travis-hx/build.sh
 
