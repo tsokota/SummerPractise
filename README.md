@@ -1,4 +1,4 @@
 # SummerPractise
 Group 525 repository: Tsokota, Pylypenko, Kravets, Titarenko
- Started on 20.06.2018
-+LabWork 1 
+#LabWork 1 
+#[![Build Status](https://travis-ci.com/tsokota/SummerPractise.svg?branch=Kravets_laba_1)](https://travis-ci.com/tsokota/SummerPractise)
