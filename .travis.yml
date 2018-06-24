@@ -1,0 +1,8 @@
+language: csharp
+solution: lab3_tp.sln
+install:
+- nuget restore lab3_TP/lab3_tp.sln
+- nuget install NUnit.Runners -Version 3.7.0 -OutputDirectory testrunner
+script:
+- xbuild /p:Configuration=Release lab3_TP/lab3_tp.sln
+- mono ./testrunner/NUnit.ConsoleRunner.3.7.0/tools/nunit3-console.exe ./lab3_TPTests/bin/Release/lab3_TPTests.dll
