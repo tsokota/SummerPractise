@@ -1,0 +1,8 @@
+language: csharp
+solution: LabWork2.sln
+install:
+- nuget restore 'LabWork2.sln'
+- nuget install NUnit.Runners -Version 3.8.0 -OutputDirectory testrunner
+script:
+- xbuild /p:Configuration=Release LabWork2.sln
+- mono ./testrunner/NUnit.ConsoleRunner.3.8.0/tools/nunit3-console.exe ./LabWork2Tests5/bin/Release/LabWork2Tests5.dll
