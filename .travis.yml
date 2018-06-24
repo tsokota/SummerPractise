@@ -1,7 +1,7 @@
 anguage: csharp
 solution: Diagrams_lab5.sln
 install:
-- nget restore lab5_TP/Diagrams_lab5.sln
+- nuget restore lab5_TP/Diagrams_lab5.sln
 - nuget install NUnit.Runners -Version 3.7.0 -OutputDirectory testrunner
 script:
 - xbuild /p:Configuration=Release lab5_TP/Diagrams_lab5.sln
