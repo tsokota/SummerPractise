@@ -24,8 +24,8 @@ namespace LabWork2.Tests
             string X1 = null, X2 = null;
 
             l.Meth3InCls(a, b, c, ref X1, ref X2);
-            Assert.AreEqual(X1, "-4,9");
-            Assert.AreEqual(X2, "-0,1");
+            Assert.AreEqual(X1, "-4.9");
+            Assert.AreEqual(X2, "-0.1");
         }
 
         [Test()]
@@ -38,8 +38,8 @@ namespace LabWork2.Tests
             string X1 = null, X2 = null;
 
             l.Meth3InCls(a, b, c, ref X1, ref X2);
-            Assert.AreEqual(X1, "-3,49");
-            Assert.AreEqual(X2, "-0,14");
+            Assert.AreEqual(X1, "-3.49");
+            Assert.AreEqual(X2, "-0.14");
         }
 
         [Test()]
@@ -82,8 +82,8 @@ namespace LabWork2.Tests
             string X1 = null, X2 = null;
 
             l.Meth3InCls(a, b, c, ref X1, ref X2);
-            Assert.AreEqual(X1, "-0,1-2i");
-            Assert.AreEqual(X2, "-0,1+2i");
+            Assert.AreEqual(X1, "-0.1-2i");
+            Assert.AreEqual(X2, "-0.1+2i");
         }
 
         [Test()]
@@ -96,8 +96,8 @@ namespace LabWork2.Tests
             string X1 = null, X2 = null;
 
             l.Meth3InCls(a, b, c, ref X1, ref X2);
-            Assert.AreEqual(X1, "-0,35-0,13i");
-            Assert.AreEqual(X2, "-0,35+0,13i");
+            Assert.AreEqual(X1, "-0.35-0.13i");
+            Assert.AreEqual(X2, "-0.35+0.13i");
         }
     }
 }
