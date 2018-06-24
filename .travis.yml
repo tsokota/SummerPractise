@@ -1,0 +1,8 @@
+anguage: csharp
+solution: Diagrams_lab5.sln
+install:
+- nuget restore lab5_TP/Diagrams_lab5.sln
+- nuget install NUnit.Runners -Version 3.7.0 -OutputDirectory testrunner
+script:
+- xbuild /p:Configuration=Release lab5_TP/Diagrams_lab5.sln
+- mono ./testrunner/NUnit.ConsoleRunner.3.7.0/tools/nunit3-console.exe ./lab5_TPTests/bin/Release/lab5_TPTests.dll
