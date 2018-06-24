@@ -26,6 +26,7 @@ namespace LabWork2.Tests
             l.Meth3InCls(a, b, c, ref X1, ref X2);
             Assert.AreEqual(X1, "-4.9");
             Assert.AreEqual(X2, "-0.1");
+
         }
 
         [Test()]
