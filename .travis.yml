@@ -1,0 +1,8 @@
+language: csharp
+solution: TP2_laba_6.sln
+install:
+- nuget restore TP2_laba_6.sln
+- nuget install NUnit.Runners -Version 3.7.0 -OutputDirectory testrunner
+script:
+- xbuild /p:Configuration=Release TP2_laba_6.sln
+- mono ./testrunner/NUnit.ConsoleRunner.3.7.0/tools/nunit3-console.exe ./TP2_laba_6Tests/bin/Release/TP2_laba_6Tests.dll
