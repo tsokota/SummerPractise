@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="matr_lab4_.MainForm">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>DARQAIkAACRAABEAAACCQQACAAAgBgAQCiwKAQFAQAA=</HashCode>
+      <FileName>MainForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="matr_lab4_.Program">
+    <Position X="6" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="matr_lab4_.AuthorForm">
+    <Position X="2.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIBAAACAAABAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AuthorForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="matr_lab4_.MatrOutForm">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAQAAAAAACAAANAAAAGAAAACEAgKAEAAAEAAEAiABAA=</HashCode>
+      <FileName>MatrOutForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="matr_lab4_.TransferClass">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TransferClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="matr_lab4_.ReadWriteFile">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>ReadWriteFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
