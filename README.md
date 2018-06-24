@@ -9,3 +9,11 @@
 ##### Laboratory work № + UnitTests         
 ##### Laboratory work № + UnitTests        
 ---------
+### Dmitry Kravets
+##### Laboratory work №1 + UnitTests       [![Build Status](https://travis-ci.com/tsokota/SummerPractise.svg?branch=Kravets_laba_1)](https://travis-ci.com/tsokota/SummerPractise)       
+##### Laboratory work № + UnitTests        
+---------
+### Vladislava Titarenko
+##### Laboratory work №4 + UnitTests       [![Build Status](https://travis-ci.com/tsokota/SummerPractise.svg?branch=LabWork4)](https://travis-ci.com/tsokota/SummerPractise)      
+##### Laboratory work № + UnitTests        
+---------
