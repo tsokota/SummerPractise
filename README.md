@@ -15,5 +15,5 @@
 ---------
 ### Vladislava Titarenko
 ##### Laboratory work №4 + UnitTests       [![Build Status](https://travis-ci.com/tsokota/SummerPractise.svg?branch=LabWork4)](https://travis-ci.com/tsokota/SummerPractise)      
-##### Laboratory work № + UnitTests        
+##### Laboratory work №5 + UnitTests      [![Build Status](https://travis-ci.com/tsokota/SummerPractise.svg?branch=LabWork5)](https://travis-ci.com/tsokota/SummerPractise)  
 ---------
