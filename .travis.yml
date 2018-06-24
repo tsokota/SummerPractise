@@ -4,5 +4,5 @@ install:
 - nuget restore matrlab4/matrlab4.sln
 - nuget install NUnit.Runners -Version 3.7.0 -OutputDirectory testrunner
 script:
-- xbuild /p:Configuration=Release matrlab4.sln
-- mono ./testrunner/NUnit.ConsoleRunner.3.7.0/tools/nunit3-console.exe ./matr(lab4)Tests/bin/Release/matr(lab4)Tests.dll
+- xbuild /p:Configuration=Release matrlab4/matrlab4.sln
+- mono ./testrunner/NUnit.ConsoleRunner.3.7.0/tools/nunit3-console.exe ./matrlab4Tests/bin/Release/matrlab4Tests.dll
