@@ -1,4 +1,4 @@
-anguage: csharp
+language: csharp
 solution: Diagrams_lab5.sln
 install:
 - nuget restore lab5_TP/Diagrams_lab5.sln
