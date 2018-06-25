@@ -89,7 +89,7 @@
             this.labelProductName.Name = "labelProductName";
             this.labelProductName.Size = new System.Drawing.Size(242, 21);
             this.labelProductName.TabIndex = 19;
-            this.labelProductName.Text = "7 л.р. ";
+            this.labelProductName.Text = "8 л.р. ";
             this.labelProductName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelVersion
@@ -115,7 +115,7 @@
             this.labelCopyright.Name = "labelCopyright";
             this.labelCopyright.Size = new System.Drawing.Size(242, 21);
             this.labelCopyright.TabIndex = 21;
-            this.labelCopyright.Text = "Автор:  Цокота Ярослав Виталиевич";
+            this.labelCopyright.Text = "Автор:  Пилипенко И. С.";
             this.labelCopyright.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelCompanyName
