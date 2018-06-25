@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabWork8", "LabWork8\LabWork8.csproj", "{DD639A7D-AF44-40E1-B2D8-892D5C43BFC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabWork8Tests1", "LabWork8Tests1\LabWork8Tests1.csproj", "{6E4684A2-1B65-41A1-9F9A-B2E14394F349}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD639A7D-AF44-40E1-B2D8-892D5C43BFC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD639A7D-AF44-40E1-B2D8-892D5C43BFC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD639A7D-AF44-40E1-B2D8-892D5C43BFC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD639A7D-AF44-40E1-B2D8-892D5C43BFC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E4684A2-1B65-41A1-9F9A-B2E14394F349}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E4684A2-1B65-41A1-9F9A-B2E14394F349}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E4684A2-1B65-41A1-9F9A-B2E14394F349}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E4684A2-1B65-41A1-9F9A-B2E14394F349}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
