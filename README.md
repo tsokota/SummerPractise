@@ -7,7 +7,7 @@
 ---------
 ### Igor Pylypenko
 ##### Laboratory work №3 + UnitTests     [![Build Status](https://travis-ci.com/tsokota/SummerPractise.svg?branch=LabWork3)](https://travis-ci.com/tsokota/SummerPractise)       
-##### Laboratory work № + UnitTests        
+##### Laboratory work №8 + UnitTests      [![Build Status](https://travis-ci.com/tsokota/SummerPractise.svg?branch=LabWork8)](https://travis-ci.com/tsokota/SummerPractise)     
 ---------
 ### Dmitry Kravets
 ##### Laboratory work №1 + UnitTests       [![Build Status](https://travis-ci.com/tsokota/SummerPractise.svg?branch=Kravets_laba_1)](https://travis-ci.com/tsokota/SummerPractise)       
